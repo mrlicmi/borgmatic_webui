@@ -9,7 +9,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Borgmatic simple ui',
       home: DefaultTabController(
         length: 4,
         child: Scaffold(
@@ -32,15 +32,14 @@ class MyApp extends StatelessWidget {
               Row(children: <Widget>[
                 Expanded(
                   child: TextFormField(
-                    initialValue: '/mnt/',
+                    initialValue: 'example: /mnt/borg/repo1',
                     maxLength: 1000,
                     decoration: InputDecoration(
-                      labelText:
-                          ' Insert repository path that you want to initialize',
+                      labelText: ' Repository path that you want to initialize',
                       labelStyle: TextStyle(
                         color: Color(0xFF6200EE),
                       ),
-                      helperText: 'Help text',
+                      helperText: ' ',
                       enabledBorder: UnderlineInputBorder(
                         borderSide: BorderSide(color: Color(0xFF6200EE)),
                       ),
